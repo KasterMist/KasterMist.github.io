@@ -90,7 +90,7 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: false
+  post: true
   language:
 
 
@@ -181,8 +181,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  GitHub: https://github.com/kastermist || fab fa-github
+  E-Mail: mailto:KasterMist@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -206,6 +206,8 @@ links_settings:
 
 links:
   #Title: http://yoursite.com
+  YouTube: https://youtube.com
+  英伟达 CUDA 教程: https://docs.nvidia.com/cuda/cuda-c-programming-guide
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -253,10 +255,34 @@ post_meta:
 
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+#symbols_count_time:
+#  separated_meta: true     # 是否另起一行（true的话不和发表时间等同一行）
+#  item_text_post: true     # 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）
+#  item_text_total: false   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）
+#  awl: 4                   # Average Word Length
+#  wpm: 275                 # Words Per Minute（每分钟阅读词数）
+#  suffix: mins.
 symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  awl: 4
+  wpm: 275
+  suffix: "mins."
   separated_meta: true
   item_text_post: true
-  item_text_total: false
+  item_text_total: true
+
+
+#post_wordcount:         # 字数统计
+#  item_text: true        # 是否显示文字
+#  wordcount: true        # 显示字数
+#  min2read: true        # 显示阅读时间
+#  totalcount: true        # 显示总数
+#  separated_meta: true    # 是否分开
+
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
@@ -848,7 +874,7 @@ motion:
 # Dependencies: https://github.com/theme-next/theme-next-pace
 # For more information: https://github.com/HubSpot/pace
 pace:
-  enable: false
+  enable: true
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
@@ -1011,3 +1037,5 @@ vendors:
 css: css
 js: js
 images: images
+
+
