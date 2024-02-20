@@ -22,15 +22,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"gitalk","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="胸有惊雷，面如平湖">
+  <meta name="description" content="参考书目: GPU高性能编程CUDA实战 **网页链接:**https:&#x2F;&#x2F;hpc.pku.edu.cn&#x2F;docs&#x2F;20170829223652566150.pdf CUDA C简介首先来看一个CUDA C的示例: 123456#include &quot;..&#x2F;common&#x2F;book.h&quot;int main()&#123;  prinf(&quot;Hello World!\n&amp;quot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cuda学习(一)">
+<meta property="og:title" content="CUDA学习(一)">
 <meta property="og:url" content="http://example.com/2024/02/20/cuda%E5%AD%A6%E4%B9%A0-%E4%B8%80/index.html">
 <meta property="og:site_name" content="KasterMist">
-<meta property="og:description" content="胸有惊雷，面如平湖">
+<meta property="og:description" content="参考书目: GPU高性能编程CUDA实战 **网页链接:**https:&#x2F;&#x2F;hpc.pku.edu.cn&#x2F;docs&#x2F;20170829223652566150.pdf CUDA C简介首先来看一个CUDA C的示例: 123456#include &quot;..&#x2F;common&#x2F;book.h&quot;int main()&#123;  prinf(&quot;Hello World!\n&amp;quot">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-02-20T09:50:03.000Z">
-<meta property="article:modified_time" content="2024-02-20T09:57:58.170Z">
+<meta property="article:modified_time" content="2024-02-20T15:47:10.296Z">
 <meta property="article:author" content="Kaster Mist">
 <meta name="twitter:card" content="summary">
 
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>cuda学习(一) | KasterMist</title>
+  <title>CUDA学习(一) | KasterMist</title>
   
 
 
@@ -186,7 +186,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          cuda学习(一)
+          CUDA学习(一)
         </h1>
 
         <div class="post-meta">
@@ -197,7 +197,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-02-20 17:50:03 / 修改时间：17:57:58" itemprop="dateCreated datePublished" datetime="2024-02-20T17:50:03+08:00">2024-02-20</time>
+              <time title="创建时间：2024-02-20 17:50:03 / 修改时间：23:47:10" itemprop="dateCreated datePublished" datetime="2024-02-20T17:50:03+08:00">2024-02-20</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -222,14 +222,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
+              <span>2.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -241,7 +241,46 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <p><strong>参考书目:</strong> GPU高性能编程CUDA实战</p>
+<p>**网页链接:**<a target="_blank" rel="noopener" href="https://hpc.pku.edu.cn/docs/20170829223652566150.pdf">https://hpc.pku.edu.cn/docs/20170829223652566150.pdf</a></p>
+<h2 id="CUDA-C简介"><a href="#CUDA-C简介" class="headerlink" title="CUDA C简介"></a>CUDA C简介</h2><p>首先来看一个CUDA C的示例:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;../common/book.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">  prinf(<span class="string">&quot;Hello World!\n&quot;</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个示例只是为了说明，CUDA C与熟悉的标准C在很大程度上是没有区别的。</p>
+<h3 id="核函数调用"><a href="#核函数调用" class="headerlink" title="核函数调用"></a>核函数调用</h3><p>在GPU设备上执行的函数通常称为核函数(Kernel)</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line">__global__ <span class="type">void</span> <span class="title function_">kernel</span><span class="params">()</span>&#123;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">  	kernel&lt;&lt;&lt;<span class="number">1</span>, <span class="number">1</span>&gt;&gt;&gt;();</span><br><span class="line">  	<span class="built_in">printf</span>(<span class="string">&quot;Hello World!\n&quot;</span>);</span><br><span class="line">  	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>跟之前的代码相比多了两处</p>
+<ul>
+<li>一个空的函数kernel()，并且带有修饰符__global__。</li>
+<li>对这个空函数的调用，并且带有修饰字符&lt;&lt;&lt;1, 1&gt;&gt;&gt;。</li>
+</ul>
+<p>这个__global__可以认为是告诉编译器，函数应该编译为在设备而不是在主机上运行。函数kernel()将被交给编译器设备代码的编译器，而main()函数将被交给主机编译器。</p>
+<h3 id="传递参数"><a href="#传递参数" class="headerlink" title="传递参数"></a>传递参数</h3><p>以下是对上述代码的进一步修改，可以实现将参数传递给核函数</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;book.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">__global__ <span class="type">void</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span>* c)</span>&#123;</span><br><span class="line">    *c = a + b;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;c is %d\n&quot;</span>, *c);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span>&#123;</span><br><span class="line">    <span class="type">int</span> c = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span>* dev_c;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;original c is %d\n&quot;</span>, c);</span><br><span class="line"></span><br><span class="line">    HANDLE_ERROR(cudaMalloc((<span class="type">void</span>**)&amp;dev_c, <span class="keyword">sizeof</span>(<span class="type">int</span>)));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    add&lt;&lt;&lt;<span class="number">1</span>, <span class="number">1</span>&gt;&gt;&gt;(<span class="number">2</span>, <span class="number">7</span>, dev_c);</span><br><span class="line">    HANDLE_ERROR(cudaMemcpy(&amp;c, dev_c, <span class="keyword">sizeof</span>(<span class="type">int</span>), cudaMemcpyDeviceToHost));</span><br><span class="line"></span><br><span class="line">    cudaFree(dev_c);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;2 + 7 = %d\n&quot;</span>, c);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中”book.h”包含了HANDLE_ERROR，也可以不使用”book.h”而是在代码中添加HANDLE_ERROR函数。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">static</span> <span class="type">void</span> <span class="title function_">HandleError</span><span class="params">( cudaError_t err,</span></span><br><span class="line"><span class="params">                         <span class="type">const</span> <span class="type">char</span> *file,</span></span><br><span class="line"><span class="params">                         <span class="type">int</span> line )</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (err != cudaSuccess) &#123;</span><br><span class="line">        <span class="built_in">printf</span>( <span class="string">&quot;%s in %s at line %d\n&quot;</span>, cudaGetErrorString( err ),</span><br><span class="line">                file, line );</span><br><span class="line">        <span class="built_in">exit</span>( EXIT_FAILURE );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> HANDLE_ERROR( err ) (HandleError( err, __FILE__, __LINE__ ))</span></span><br><span class="line"></span><br><span class="line">__global__ <span class="type">void</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span>* c)</span>&#123;</span><br><span class="line">    *c = a + b;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;c is %d\n&quot;</span>, *c);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span>&#123;</span><br><span class="line">    <span class="type">int</span> c = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span>* dev_c;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;original c is %d\n&quot;</span>, c);</span><br><span class="line"></span><br><span class="line">    HANDLE_ERROR(cudaMalloc((<span class="type">void</span>**)&amp;dev_c, <span class="keyword">sizeof</span>(<span class="type">int</span>)));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    add&lt;&lt;&lt;<span class="number">1</span>, <span class="number">1</span>&gt;&gt;&gt;(<span class="number">2</span>, <span class="number">7</span>, dev_c);</span><br><span class="line">    HANDLE_ERROR(cudaMemcpy(&amp;c, dev_c, <span class="keyword">sizeof</span>(<span class="type">int</span>), cudaMemcpyDeviceToHost));</span><br><span class="line">		</span><br><span class="line">  	<span class="built_in">printf</span>(<span class="string">&quot;2 + 7 = %d\n&quot;</span>, c);</span><br><span class="line">    cudaFree(dev_c);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>cudaMalloc()用来分配内存，这个函数的调用行为非常类似于标准C函数的malloc()，但该函数作用是告诉CUDA运行时在设备上分配内存。<ul>
+<li>第一个参数是一个指针，指向用于保存新分配内存地址的变量。第二个参数是分配内存的大小。</li>
+<li>该函数返回的类型是void*。</li>
+<li>不能使用标准C的free()函数来释放cudaMallocc()分配的内存。要释放cudaMalloc()分配的内存，需要调用cudaFree()。</li>
+</ul>
+</li>
+<li>HANDLE_ERROR()是定义的一个宏，作为辅助代码的一部分，用来判断函数调用是否返回了一个错误值，如果是的话，将输出相应的错误消息。</li>
+<li>在主机代码中可以通过调用cudaMemcpy()来访问设备上的内存。<ul>
+<li>第一个参数是目标(target)指针，第二个参数是源(source)指针，第三个参数分配内存大小。第四个参数则是指定设备内存指针。</li>
+<li>第四个参数一般有cudaMemcpyDeviceToHost，cudaMemcpyHostToDevice, cudaMemcpyDeviceToDevice三种。cudaMemcpyDeviceToHost说明我们将设备内存指针的数据传递给主机内存指针，此时第一个参数指针是在主机上，第二个参数指针是在设备上。cudaMemcpyHostToDevice说明我们将主机内存指针的数据传递给设备内存指针，此时第一个参数指针是在设备上，第二个参数指针是在主机上。此外还可以通过传递参数cudaMemcpyDeviceToDevice莱高速运行时这两个指针都在设备上。如果源指针和目标指针都在主机上，则可以直接调用memcpy()函数。</li>
+</ul>
+</li>
+</ul>
+<h3 id="查询设备"><a href="#查询设备" class="headerlink" title="查询设备"></a>查询设备</h3><p>我们可以使用cudaGetDeviceCount()来查询设备数量(比如GPU数量)。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> count;</span><br><span class="line">HANDLE_ERROR(cudaGetDeviceCount(&amp;count));</span><br></pre></td></tr></table></figure>
+
+<p>CUDA设备属性包含很多信息，可以在书上或者NVIDIA官方网站上查到。</p>
+
     </div>
 
     
@@ -256,7 +295,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://example.com/2024/02/20/cuda%E5%AD%A6%E4%B9%A0-%E4%B8%80/" title="cuda学习(一)">http://example.com/2024/02/20/cuda学习-一/</a>
+    <a href="http://example.com/2024/02/20/cuda%E5%AD%A6%E4%B9%A0-%E4%B8%80/" title="CUDA学习(一)">http://example.com/2024/02/20/cuda学习-一/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -355,6 +394,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CUDA-C%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">CUDA C简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B8%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8"><span class="nav-number">1.1.</span> <span class="nav-text">核函数调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0"><span class="nav-number">1.2.</span> <span class="nav-text">传递参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E8%AF%A2%E8%AE%BE%E5%A4%87"><span class="nav-number">1.3.</span> <span class="nav-text">查询设备</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -439,13 +479,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">3k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">3 分钟</span>
 </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
