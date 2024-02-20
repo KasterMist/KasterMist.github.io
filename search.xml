@@ -4,12 +4,18 @@
   
     
     <entry>
-      <title>test_post</title>
-      <link href="/2024/02/16/test-post/"/>
-      <url>/2024/02/16/test-post/</url>
+      <title>cuda学习(一)</title>
+      <link href="/2024/02/20/cuda%E5%AD%A6%E4%B9%A0-%E4%B8%80/"/>
+      <url>/2024/02/20/cuda%E5%AD%A6%E4%B9%A0-%E4%B8%80/</url>
       
         <content type="html"><![CDATA[]]></content>
       
+      
+      <categories>
+          
+          <category> cuda </category>
+          
+      </categories>
       
       
     </entry>

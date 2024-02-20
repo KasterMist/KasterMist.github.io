@@ -9,21 +9,23 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>胸有惊雷，面如平湖</description>
-    <pubDate>Fri, 16 Feb 2024 12:51:48 GMT</pubDate>
+    <pubDate>Tue, 20 Feb 2024 09:57:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>test_post</title>
-      <link>http://example.com/2024/02/16/test-post/</link>
-      <guid>http://example.com/2024/02/16/test-post/</guid>
-      <pubDate>Fri, 16 Feb 2024 12:51:48 GMT</pubDate>
+      <title>cuda学习(一)</title>
+      <link>http://example.com/2024/02/20/cuda%E5%AD%A6%E4%B9%A0-%E4%B8%80/</link>
+      <guid>http://example.com/2024/02/20/cuda%E5%AD%A6%E4%B9%A0-%E4%B8%80/</guid>
+      <pubDate>Tue, 20 Feb 2024 09:50:03 GMT</pubDate>
       
       
       
       
+      <category domain="http://example.com/categories/cuda/">cuda</category>
       
       
-      <comments>http://example.com/2024/02/16/test-post/#disqus_thread</comments>
+      
+      <comments>http://example.com/2024/02/20/cuda%E5%AD%A6%E4%B9%A0-%E4%B8%80/#disqus_thread</comments>
       
     </item>
     
