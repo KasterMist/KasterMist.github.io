@@ -9,8 +9,25 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>胸有惊雷，面如平湖</description>
-    <pubDate>Wed, 21 Feb 2024 07:20:35 GMT</pubDate>
+    <pubDate>Wed, 21 Feb 2024 11:03:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>CUDA学习(三)</title>
+      <link>http://example.com/2024/02/21/CUDA%E5%AD%A6%E4%B9%A0-%E4%B8%89/</link>
+      <guid>http://example.com/2024/02/21/CUDA%E5%AD%A6%E4%B9%A0-%E4%B8%89/</guid>
+      <pubDate>Wed, 21 Feb 2024 11:03:11 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="http://example.com/categories/CUDA/">CUDA</category>
+      
+      
+      
+      <comments>http://example.com/2024/02/21/CUDA%E5%AD%A6%E4%B9%A0-%E4%B8%89/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>CUDA学习(二)</title>
