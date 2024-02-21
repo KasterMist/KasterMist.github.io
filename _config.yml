@@ -28,7 +28,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -111,3 +111,10 @@ symbols_count_time:
   total_symbols: true          # 站点总字数统计
   total_time: true             # 站点总阅读时长
   exclude_codeblock: false     # 排除代码字数统计
+
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 10
+  hub:
+  content: 'true'
