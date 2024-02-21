@@ -9,7 +9,7 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>胸有惊雷，面如平湖</description>
-    <pubDate>Wed, 21 Feb 2024 11:03:34 GMT</pubDate>
+    <pubDate>Wed, 21 Feb 2024 11:43:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,14 @@
       <guid>http://example.com/2024/02/21/CUDA%E5%AD%A6%E4%B9%A0-%E4%B8%89/</guid>
       <pubDate>Wed, 21 Feb 2024 11:03:11 GMT</pubDate>
       
+      <description>&lt;p&gt;这一章将介绍线程块以及线程之间的通信机制和同步机制。&lt;/p&gt;
+&lt;p&gt;在GPU启动并行代码的实现方法是告诉CUDA运行时启动核函数的多个并行副本。我们将这些并行副本称为线程块(Block)。&lt;/p&gt;
+&lt;p&gt;CUDA运行时将把这些线程块分解为多个线程。当需要启动多个并行线程块时，只需将尖括号中的第一个参数由1改为想要启动的线程块数量。&lt;/p&gt;
+&lt;p&gt;在尖括号中，第二个参数表示CUDA运行时在每个线程块中创建的线程数量。假设尖括号中的变量为&amp;lt;&amp;lt;&amp;lt;N, M&amp;gt;&amp;gt;&amp;gt;总共启动的线程数量可以按照以下公式计算:&lt;br&gt;$$&lt;br&gt;N个线程块 * M个线程&amp;#x2F;线程块 &amp;#x3D; N*M个并行线程&lt;br&gt;$$&lt;/p&gt;</description>
       
+      
+      
+      <content:encoded><![CDATA[<p>这一章将介绍线程块以及线程之间的通信机制和同步机制。</p><p>在GPU启动并行代码的实现方法是告诉CUDA运行时启动核函数的多个并行副本。我们将这些并行副本称为线程块(Block)。</p><p>CUDA运行时将把这些线程块分解为多个线程。当需要启动多个并行线程块时，只需将尖括号中的第一个参数由1改为想要启动的线程块数量。</p><p>在尖括号中，第二个参数表示CUDA运行时在每个线程块中创建的线程数量。假设尖括号中的变量为&lt;&lt;&lt;N, M&gt;&gt;&gt;总共启动的线程数量可以按照以下公式计算:<br>$$<br>N个线程块 * M个线程&#x2F;线程块 &#x3D; N*M个并行线程<br>$$</p><span id="more"></span><h3 id="使用线程实现GPU上的矢量求和"><a href="#使用线程实现GPU上的矢量求和" class="headerlink" title="使用线程实现GPU上的矢量求和"></a>使用线程实现GPU上的矢量求和</h3><p>在之前的代码中，我们才去的时调用N个线程块，每个线程块对应一个线程<code>add&lt;&lt;&lt;N, 1&gt;&gt;&gt;(dev_a, dev_b, dev_c);</code>。</p><p>如果我们启动N个线程，并且所有线程都在一个线程块中，则可以表示为<code>add&lt;&lt;&lt;1, N&gt;&gt;&gt;(dev_a, dev_b, dev_c);</code>。此外，因为只有一个线程块，我们需要通过线程索引来对数据进行索引(而不是线程块索引)，需要将<code>int tid = blockIdx.x;</code>修改为<code>int tid = threadIdx.x;</code></p><h3 id="在GPU上对更长的矢量求和"><a href="#在GPU上对更长的矢量求和" class="headerlink" title="在GPU上对更长的矢量求和"></a>在GPU上对更长的矢量求和</h3>]]></content:encoded>
       
       
       <category domain="http://example.com/categories/CUDA/">CUDA</category>

@@ -195,7 +195,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-02-21 19:03:11 / 修改时间：19:03:34" itemprop="dateCreated datePublished" datetime="2024-02-21T19:03:11+08:00">2024-02-21</time>
+              <time title="创建时间：2024-02-21 19:03:11 / 修改时间：19:43:28" itemprop="dateCreated datePublished" datetime="2024-02-21T19:03:11+08:00">2024-02-21</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -213,7 +213,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
+              <span>559</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -232,7 +232,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <p>这一章将介绍线程块以及线程之间的通信机制和同步机制。</p>
+<p>在GPU启动并行代码的实现方法是告诉CUDA运行时启动核函数的多个并行副本。我们将这些并行副本称为线程块(Block)。</p>
+<p>CUDA运行时将把这些线程块分解为多个线程。当需要启动多个并行线程块时，只需将尖括号中的第一个参数由1改为想要启动的线程块数量。</p>
+<p>在尖括号中，第二个参数表示CUDA运行时在每个线程块中创建的线程数量。假设尖括号中的变量为&lt;&lt;&lt;N, M&gt;&gt;&gt;总共启动的线程数量可以按照以下公式计算:<br>$$<br>N个线程块 * M个线程&#x2F;线程块 &#x3D; N*M个并行线程<br>$$</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/02/21/CUDA%E5%AD%A6%E4%B9%A0-%E4%B8%89/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -656,7 +667,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">5k</span>
+    <span title="站点总字数">6k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
