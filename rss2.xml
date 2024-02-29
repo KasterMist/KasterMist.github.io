@@ -9,7 +9,7 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>胸有惊雷，面如平湖</description>
-    <pubDate>Thu, 29 Feb 2024 04:15:37 GMT</pubDate>
+    <pubDate>Thu, 29 Feb 2024 04:19:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,11 @@
       <guid>http://example.com/2024/02/29/CUDA%E5%AD%A6%E4%B9%A0-%E5%85%AB/</guid>
       <pubDate>Thu, 29 Feb 2024 04:14:49 GMT</pubDate>
       
+      <description>&lt;p&gt;本章&lt;/p&gt;</description>
       
+      
+      
+      <content:encoded><![CDATA[<p>本章</p><span id="more"></span>]]></content:encoded>
       
       
       <category domain="http://example.com/categories/CUDA/">CUDA</category>
